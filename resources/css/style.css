@@ -1,0 +1,166 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: white;
+    top: 0px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+#home {
+    font-size: 2rem;
+    font-weight: 500;
+    font-style: italic;
+    position: relative;
+    left: 20px;
+}
+
+header div {
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
+    position: relative;
+    right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+}
+
+#intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 300px;
+}
+
+#intro #name {
+    border: none;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+#intro h3 {
+    position: relative;
+    bottom: 30px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#intro img {
+    max-width: 500px;
+    min-width: 200px;
+    max-height: 550px;
+    min-height: 250px;
+    position: relative;
+    right: 50px;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#journey {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 600px;
+}
+
+.fact-cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 550px;
+    width: 100%;
+}
+
+.card {
+    border: 1px solid black;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#projects div {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#projects div a {
+    width: 450px;
+    height: 420px;
+    border: 1px solid black;
+}
+
+#cv {
+    display: flex;
+    justify-content: center;
+}
+
+#cv a {
+    width: 350px;
+    height: 450px;
+    border: 1px solid black;
+}
+
+#cv a h2 {
+    position: relative;
+    text-align: center;
+    top: 40%;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact .form {
+    text-align: center;
+}
+
+#email, #comment {
+    width: 290px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+}
