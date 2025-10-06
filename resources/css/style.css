@@ -160,7 +160,22 @@ h1 {
 
 footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color: #f2f2f2;
+}
+
+#footer-links {
+    justify-self: center;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socials a, .socials a img {
+    width: 60px;
+    height: 60px;
 }
