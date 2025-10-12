@@ -160,18 +160,17 @@ p {
 #cv {
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 600px;
 }
 
 #cv a {
-    width: 350px;
-    height: 450px;
+    width: 372px;
+    height: 526.2px;
     border: 4px solid hsla(51, 90%, 50%, 0.95);
-}
-
-#cv a h2 {
-    position: relative;
-    text-align: center;
-    top: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #contact {
