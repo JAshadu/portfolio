@@ -273,7 +273,6 @@ footer {
 }
 
 #footer-links {
-    text-decoration: underline hsla(51, 90%, 50%, 0.95);
     font-size: 1.5rem;
     width: 350px;
     display: flex;
@@ -281,6 +280,11 @@ footer {
     align-items: center;
     font-style: italic;
     height: 60px;
+}
+
+.vertical-bar {
+    color: hsla(51, 90%, 50%, 0.95);
+    font-style: normal;
 }
 
 .socials {
