@@ -169,16 +169,18 @@ p {
     width: 100%;
 }
 
-#projects div a {
+#projects div a img {
     width: 430px;
     height: 400px;
     border-radius: 1rem;
+    opacity: 0.7;
 }
 
-#projects div a:hover {
+#projects div a img:hover {
     width: 450px;
     height: 420px;
     border: 2px solid hsla(51, 90%, 50%, 0.95);
+    opacity: 1;
 }
 
 #cv {
