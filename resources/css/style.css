@@ -155,6 +155,19 @@ p {
     color: white;
 }
 
+.back-card p {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.back-card ul {
+    width: 80%;
+}
+
+.quotes {
+    margin-bottom: 8px;
+}
+
 #projects {
     display: flex;
     flex-direction: column;
