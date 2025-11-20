@@ -137,8 +137,9 @@ p {
 }
 
 .front-card {
-    display: none;
     font-size: 1.5rem;
+    vertical-align: middle;
+    line-height: 330px;
 }
 
 .front-card:hover {
@@ -150,6 +151,7 @@ p {
 }
 
 .back-card {
+    display: none;
     background-color: hsla(51, 90%, 50%, 0.95);
     text-align: start;
     color: white;
@@ -166,6 +168,12 @@ p {
 
 .quotes {
     margin-bottom: 8px;
+}
+
+.back-card:hover {
+    font-size: 1.2rem;
+    width: 320px;
+    height: 420px;
 }
 
 #projects {
