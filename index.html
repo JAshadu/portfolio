@@ -5,6 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JAshadu: Full-Stack Developer</title>
     <link rel="stylesheet" href="./resources/css/style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init({
+              publicKey: "cYVymUse6I7KeKVU4",
+            });
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                emailjs.sendForm('service_5xsmu69', 'template_ofn426c', this)
+                    .then(() => {
+                        this.reset();
+                        alert("Message recieved!");
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                        alert("There was an error with your submission, please try again.");
+                    });
+            });
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -123,9 +146,9 @@
             <p>Want to get in touch? Send me an email or follow any of my socials below!</p>
             <div class="form">
                 <!-- connect to my email -->
-                <form action="">
+                <form id="form" action="">
                     <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
-                    <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+                    <input type="text" id="last-name" name="last-name" placeholder="Last Name">
                     <br>
                     <input type="email" id="user-email" name="email" placeholder="Email Address" required>
                     <br>
