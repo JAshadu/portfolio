@@ -312,7 +312,7 @@ footer {
 #my-email {
     display: flex;
     align-items: center;
-    width: 300px;
+    width: 350px;
     height: 60px;
 }
 
@@ -338,15 +338,16 @@ footer {
 
 .socials {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    width: 300px;
+    width: 350px;
     height: 60px;
 }
 
 .socials a, .socials a img {
     width: 45px;
     height: 45px;
+    margin-left: 30px;
 }
 
 .socials img {
