@@ -370,3 +370,7 @@ footer {
     border: 1.5px solid hsla(51, 90%, 50%, 0.95);
     border-radius: 0.5rem;
 }
+
+#github {
+    background-color: white;
+}
