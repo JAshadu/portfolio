@@ -54,13 +54,23 @@ a {
     color: white;
 }
 
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
 main {
     display: flex;
     flex-direction: column;
     position: relative;
 }
-
-
 
 #intro {
     height: 100vh;
@@ -74,40 +84,17 @@ main {
     background-size: cover;
 }
 
-#intro #name {
-    border: none;
-}
-
-h1 {
-    font-size: 5rem;
-}
-
-h2 {
-    font-size: 3rem;
-}
-
-h3 {
-    font-size: 2rem;
-}
-
-p {
-    font-size: 1.5rem;
-}
-
 #intro h3 {
     position: relative;
     bottom: 30px;
     font-weight: 500;
+    font-size: 2rem;
+    text-align: center;
 }
 
-#intro img {
-    max-width: 500px;
-    min-width: 200px;
-    max-height: 550px;
-    min-height: 250px;
-    position: relative;
-    right: 50px;
-    border: 2px solid hsla(51, 90%, 50%, 0.95);
+#intro h3 em {
+    font-style: normal;
+    color: hsla(51, 90%, 50%);
 }
 
 #about {
