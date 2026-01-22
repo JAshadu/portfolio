@@ -7,13 +7,13 @@ const backCardsArray = Array.from(backCards)
 function flipCard(e) {
     let i = frontCardsArray.indexOf(e.currentTarget)
     frontCardsArray[i].style.display = "none"
-    backCardsArray[i].style.display = "block"
+    backCardsArray[i].style.display = "flex"
 }
 
 function flipBackCard(e) {
     let i = backCardsArray.indexOf(e.currentTarget)
     backCardsArray[i].style.display = "none"
-    frontCardsArray[i].style.display = "block"
+    frontCardsArray[i].style.display = "flex"
 }
 
 frontCardsArray.forEach(card => {
@@ -43,3 +43,19 @@ function clearText() {
 
 cvLink.addEventListener("mouseenter", clearText)
 cvLink.addEventListener("mouseleave", clearText)
+
+
+const burger = document.querySelector('.burger')
+const headerLinks = document.getElementById('header-links')
+
+burger.addEventListener('click', () => {
+    burger.classList.toggle('active');
+    headerLinks.classList.toggle('active');
+})
+
+for(let c = 0; c < headerLinks.children.length; c++) {
+    headerLinks.children[c].addEventListener('click', () => {
+        burger.classList.remove('active');
+        headerLinks.classList.remove('active');
+    })
+}
