@@ -288,7 +288,7 @@ form input:focus::placeholder, #comment:focus::placeholder {
 }
 
 #user-email, #comment {
-    width: 552px;
+    width: 550px;
 }
 
 #user-email {
@@ -297,7 +297,7 @@ form input:focus::placeholder, #comment:focus::placeholder {
 
 #comment {
     height: 50px;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     resize: none;
 }
 
@@ -373,10 +373,12 @@ footer {
 @media (hover: hover) and (pointer: fine) {
     #home:hover {
         color: hsla(51, 90%, 50%, 0.95);
+        cursor: pointer;
     }
 
     #header-links a:hover {
         text-decoration: underline hsla(51, 90%, 50%, 0.95);
+        cursor: pointer;
     }
 
     .card:hover {
@@ -389,12 +391,14 @@ footer {
         border: none;
         width: 320px;
         height: 480px;
+        cursor: pointer;
     }
 
     .back-card:hover {
         font-size: 1.1rem;
         width: 320px;
         height: 480px;
+        cursor: pointer;
     }
 
     #projects div a:hover, #projects div a img:hover {
@@ -402,10 +406,12 @@ footer {
         height: 420px;
         border: 2px solid hsla(51, 90%, 50%, 0.95);
         opacity: 1;
+        cursor: pointer;
     }
 
     #cv a:hover {
         opacity: 1;
+        cursor: pointer;
     }
 
     #submit:hover {
@@ -413,18 +419,469 @@ footer {
         background-color: hsla(51, 90%, 50%, 0.95);
         border: none;
         font-weight: 600;
+        cursor: pointer;
     }
 
     #footer-links a:hover {
         text-decoration: underline hsla(51, 90%, 50%, 0.95) 2px;
+        cursor: pointer;
     }
 
     .socials img:hover {
         border: 1.5px solid hsla(51, 90%, 50%, 0.95);
+        cursor: pointer;
     }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+@media only screen and (min-width: 1600px) {
+    header {
+        padding: 12px 0;
+    }
+
+    nav {
+        height: 100px;
+        padding: 0 48px;
+    }
+
+    #home {
+        font-size: 4.5rem;
+    }
+
+    #header-links {
+        font-size: 3.5rem;
+    }
+
+    #header-links a {
+        padding-left: 45px;
+    }
+
+    h1 {
+        font-size: 9rem;
+    }
+
+    h2 {
+        font-size: 4.5rem;
+    }
+
+    p {
+        font-size: 3rem;
+    }
+
+    #intro {
+        height: 100vh;
+        column-gap: 300px;
+    }
+
+    #intro h3 {
+        bottom: 30px;
+        font-size: 3rem;
+    }
+
+    #about {
+        padding: 20px 0 50px 0;
+        height: 100vh;
+    }
+
+    #journey {
+        width: 70%;
+        max-width: none;
+    }
+
+    .fact-cards {
+        height: 800px;
+    }
+
+    .front-card, .back-card {
+        width: 450px;
+        height: 650px;
+    }
+
+    .front-card {
+        font-size: 2.5rem;
+    }
+
+    .back-card p {
+        font-size: 1.8rem;
+    }
+
+    .back-card ul {
+        width: 90%;
+        font-size: 1.5rem;
+    }
+
+    .quotes {
+        margin-bottom: 12px;
+    }
+
+    #projects {
+        height: 100vh;
+    }
+
+    #projects h2 {
+        bottom: 20px;
+        padding-bottom: 100px;
+    }
+
+    #projects div a, #projects div a img {
+        width: 650px;
+        height: 600px;
+    }
+
+    #cv {
+        height: 100vh;
+    }
+
+    #cv a {
+        width: 30%;
+        height: 70%;
+    }
+
+    #contact p {
+        margin-bottom: 24px;
+    }
+
+    form input, form textarea {
+        margin-top: 35px;
+        margin-bottom: 35px;
+        font-size: 1.5rem;
+    }
+
+    form input:focus, form textarea:focus {
+        font-size: 1.8rem;
+    }
+
+    form input:focus::placeholder, #comment:focus::placeholder {
+        font-size: 1.8rem;
+    }
+
+    #first-name, #last-name {
+        width: 350px;
+        height: 45px;
+    }
+
+    #user-email, #comment {
+        width: 750px;
+    }
+
+    #user-email {
+        height: 45px;
+    }
+
+    #comment {
+        height: 75px;
+    }
+
+    #submit {
+        width: 400px;
+        height: 75px;
+        font-size: 1.6rem;
+    }
+
+    #my-email {
+        width: 550px;
+        height: 90px;
+    }
+
+    #my-email img {
+        height: 65px;
+        width: 65px;
+    }
+
+    #footer-links {
+        font-size: 2.5rem;
+        width: 650px;
+        height: 90px;
+    }
+
+    .vertical-bar {
+        font-size: 3rem;
+    }
+
+    .socials {
+        width: 550px;
+        height: 90px;
+    }
+
+    .socials a, .socials a img {
+        width: 65px;
+        height: 65px;
+        margin-left: 45px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    header {
+        width: 100%;
+    }
+    
+    nav {
+        padding: 0 16px;
+    }
+
+    #home {
+        z-index: 1;
+    }
+
+    h2 {
+        font-size: 2.8rem;
+    }
+
+    #about {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #journey {
+        width: 90%;
+    }
+
+    #journey p {
+        font-size: 1.4rem;
+    }
+
+    .card {
+        margin: 16px 32px;
+    }
+
+    .fact-cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 90%;
+    }
+
+    .front-card, .back-card {
+        padding: 10px 0;
+        margin: 10px 0;
+    }
+
+    #projects {
+        height: auto;
+    }
+
+    #projects h2 {
+        text-align: center;
+        padding: 32px;
+        bottom: 0px;
+    }
+
+    #projects div {
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    #projects div a {
+        width: 70%;
+        height: auto;
+        margin: 16px 0;
+        opacity: 1;
+    }
+
+    #projects div a img {
+        width: 100%;
+        height: 100%;
+        min-height: 450px;
+        opacity: 1;
+        margin: auto;
+    }
+
+    #cv {
+        height: 80vh;
+    }
+
+    #cv a {
+        width: 70%;
+        height: auto;
+        border: 4px solid hsla(51, 90%, 50%, 0.95);
+    }
+
+    #contact {
+        height: 75vh;
+        padding: 48px 0;
+    }
+
+    #contact p {
+        width: 90%;
+        text-align: center;
+    }
+
+    #contact .form {
+        width: 60%;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #first-name, #last-name, #user-email, #comment {
+        width: 100%;
+    }
+    
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 12px 0;
+    }
+
+    #my-email, #footer-links, #socials {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 16px 0;
+    }
+
+    #my-email {
+        display: flex;
+        align-items: center;
+    }
+
+    #my-email img {
+        height: 45px;
+        width: 45px;
+    }
+
+    #my-email p {
+        font-size: 2rem;
+    }
+
+    #footer-links a {
+        font-size: 2rem;
+        padding: 0 4px;
+    }
+
+    .socials {
+        margin: 16px 0;
+    }
+
+    .socials a, .socials a img {
+        width: 55px;
+        height: 55px;
+        margin: 0 24px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    header {
+        width: 100%;
+    }
+    
+    nav {
+        padding: 0 16px;
+    }
+
+    #home {
+        z-index: 1;
+    }
+
+    h2 {
+        font-size: 2.7rem;
+    }
+
+    #about {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #journey {
+        width: 90%;
+    }
+
+    #journey p {
+        font-size: 1.4rem;
+    }
+
+    .fact-cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .front-card, .back-card {
+        padding: 10px 0;
+        margin: 10px 0;
+    }
+
+    #projects {
+        height: auto;
+    }
+
+    #projects h2 {
+        text-align: center;
+        width: 90%;
+        padding: 10px;
+        bottom: 0px;
+    }
+
+    #projects div {
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    #projects div a {
+        width: 350px;
+        height: 300px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        opacity: 1;
+    }
+
+    #projects div a img {
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+    }
+
+    #cv a {
+        width: 90%;
+        height: 70vh;
+        border: 4px solid hsla(51, 90%, 50%, 0.95);
+    }
+
+    #contact p {
+        width: 90%;
+        text-align: center;
+    }
+
+    #first-name, #last-name, #user-email, #comment {
+        width: 90%;
+    }
+    
+    footer {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #my-email, #footer-links, #socials {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .socials {
+        margin: 5px 0;
+    }
+
+    .socials a, .socials a img {
+        margin: 0 15px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
     header {
         width: 100%;
     }
@@ -588,20 +1045,4 @@ footer {
     .socials a, .socials a img {
         margin: 0 15px;
     }
-}
-
-@media only screen and (min-width: 480px) and (max-width: 768px) {
-   /* Tablet */
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-   /* Tablet Landscape */
-}
-
-@media only screen and (min-width: 1024px) and (max-width: 1600px) {
-   /* Laptop */
-}
-
-@media only screen and (min-width: 1600px) {
-   /* Desktop */
 }
