@@ -370,6 +370,76 @@ footer {
     background-color: white;
 }
 
+.popup-container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(0, 0%, 5%, 0.8);
+    z-index: 5;
+    display: none;
+}
+
+.popup-container.active {
+    display: block;
+}
+
+.popup {
+    position: fixed;
+    left: 20%;
+    top: 20%;
+    width: 60%;
+    height: 60vh;
+    padding: 0 24px;
+    border: 4px solid hsla(51, 90%, 50%, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #101726;
+    opacity: 1;
+}
+
+.popup h2 {
+    margin: 40px 6px 40px 0;
+}
+
+.popup div {
+    margin: 40px 0 40px 6px;
+}
+
+.popup div p {
+    margin: 0;
+    margin-bottom: 9px;
+}
+
+.popup div span {
+    font-style: italic;
+    font-weight: 100;
+}
+
+.popup div a {
+    width: 250px;
+    height: 50px;
+    font-size: 1.1rem;
+    color: hsla(51, 90%, 50%, 0.95);
+    background-color: white;
+    border: 2px solid hsla(51, 90%, 50%, 0.95);
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 36px;
+    margin-left: 20%;
+}
+
+#close-popup {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 12px 18px 0 0;
+}
+
 @media (hover: hover) and (pointer: fine) {
     #home:hover {
         color: hsla(51, 90%, 50%, 0.95);
@@ -429,6 +499,19 @@ footer {
 
     .socials img:hover {
         border: 1.5px solid hsla(51, 90%, 50%, 0.95);
+        cursor: pointer;
+    }
+
+    .popup div a:hover {
+        color: white;
+        background-color: hsla(51, 90%, 50%, 0.95);
+        border: none;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    #close-popup:hover {
+        color: hsla(51, 90%, 50%, 0.95);
         cursor: pointer;
     }
 }
@@ -767,6 +850,14 @@ footer {
         height: 55px;
         margin: 0 24px;
     }
+
+    .popup {
+        position: fixed;
+        left: 5%;
+        top: 30%;
+        width: 90%;
+        height: 40vh;
+    }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
@@ -878,6 +969,36 @@ footer {
 
     .socials a, .socials a img {
         margin: 0 15px;
+    }
+
+    .popup {
+        position: fixed;
+        left: 5%;
+        top: 30%;
+        width: 90%;
+        height: 40vh;
+    }
+
+    .popup h2 {
+        font-size: 1.8rem;
+    }
+
+    .popup div {
+        margin: 40px 0 40px 6px;
+    }
+
+    .popup div p {
+        margin: 0;
+        margin-bottom: 9px;
+        font-size: 1.1rem;
+    }
+
+    .popup div a {
+        width: 200px;
+        height: 30px;
+        font-size: 1rem;
+        margin-top: 12px;
+        margin-left: 10%;
     }
 }
 
@@ -1044,5 +1165,38 @@ footer {
 
     .socials a, .socials a img {
         margin: 0 15px;
+    }
+
+    .popup {
+        position: fixed;
+        left: 10%;
+        top: 15%;
+        width: 80%;
+        height: 65vh;
+        flex-direction: column;
+    }
+
+    .popup h2 {
+        font-size: 1.8rem;
+        text-align: center;
+        margin: 40px 0 20px 0px;
+    }
+
+    .popup div {
+        margin: 20px 0 40px 0px;
+    }
+
+    .popup div p {
+        margin: 0;
+        margin-bottom: 9px;
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .popup div a {
+        width: 100%;
+        height: 40px;
+        margin-top: 24px;
+        margin-left: 0;
     }
 }

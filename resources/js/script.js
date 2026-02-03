@@ -59,3 +59,30 @@ for(let c = 0; c < headerLinks.children.length; c++) {
         headerLinks.classList.remove('active');
     })
 }
+
+
+const popupContainer = document.querySelector('.popup-container')
+const learnToCode = document.querySelector('#learn-to-code')
+const closePopup = document.querySelector('#close-popup')
+const body = document.body
+const html = document.documentElement
+
+const bodyScroll = () => {
+    if(popupContainer.classList.contains('active')) {
+        body.style.overflowY = "hidden"
+        html.style.overflowY = "hidden"
+    } else {
+        body.style.overflowY = "scroll"
+        html.style.overflowY = "scroll"
+    }
+}
+
+learnToCode.addEventListener('click', () => {
+    popupContainer.classList.toggle('active')
+    bodyScroll()
+})
+
+closePopup.addEventListener('click', () => {
+    popupContainer.classList.remove('active')
+    bodyScroll()
+})
